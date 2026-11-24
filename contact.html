@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+
+<!-- Website template by freewebsitetemplates.com -->
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Me | Reshikesh Yadav</title>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/mobile.css" rel="stylesheet" type="text/css"/>
+<script src="js/mobile.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="page">
+<!-- ===== HEADER ===== -->
+<div id="header">
+<div>
+<a class="logo" href="index.html">
+                RESHIKESH YADAV
+            </a>
+<ul id="navigation">
+<li>
+<a href="index.html">Home</a>
+</li>
+<li>
+<a href="about.html">About Me</a>
+</li>
+<li class="menu">
+<a href="projects.html">Projects</a>
+<ul class="primary">
+<li>
+<a href="proj1.html">Portfolio Detail</a>
+</li>
+</ul>
+</li>
+<li class="menu">
+<a href="blog.html">My Life</a>
+<ul class="secondary">
+<li>
+<a href="singlepost.html">
+                                My Story
+                            </a>
+</li>
+</ul>
+</li>
+<li class="selected">
+<a href="contact.html">Contact</a>
+</li>
+</ul>
+</div>
+</div>
+<!-- ===== CONTACT ME PAGE ===== -->
+<div class="contact-page" id="body">
+<div class="header">
+<div class="contact">
+<h1>CONTACT ME</h1>
+<h2>LET'S CREATE SOMETHING GREAT</h2>
+<p class="contact-intro">A great conversation can begin with a simple hello. Whether you want to exchange ideas, talk about a coding project, or give feedback on my portfolio, I'd be happy to hear from you.</p>
+<!-- ===== DIRECT EMAIL ===== -->
+<div class="contact-email-box">
+<h3>GET IN TOUCH</h3>
+<p>Prefer sending a direct email? Use the address below.</p>
+<a class="direct-email" href="mailto:reshikeshyadav55@gmail.com">
+                        reshikeshyadav55@gmail.com
+                    </a>
+</div>
+<!-- ===== CONTACT FORM ===== -->
+<div class="contact-form-box">
+<h3>SEND ME A MESSAGE</h3>
+<form id="contact-form">
+<label for="visitor-name">
+                            YOUR NAME
+                        </label>
+<input id="visitor-name" name="name" placeholder="Enter your name" required="" type="text"/>
+<label for="visitor-email">
+                            YOUR EMAIL
+                        </label>
+<input id="visitor-email" name="email" placeholder="Enter your email" required="" type="email"/>
+<label for="visitor-subject">
+                            SUBJECT
+                        </label>
+<input id="visitor-subject" name="subject" placeholder="What is your message about?" required="" type="text"/>
+<label for="visitor-message">
+                            YOUR MESSAGE
+                        </label>
+<textarea id="visitor-message" name="message" placeholder="Write your message here..." required="" rows="7"></textarea>
+<input id="submit" type="submit" value="OPEN EMAIL DRAFT"/>
+</form>
+<p class="form-note">
+                        This form opens your email
+                        application with a prepared
+                        message. You can review and
+                        send it from there.
+                    </p>
+</div>
+</div>
+</div>
+</div>
+<!-- ===== SOCIAL FOOTER ===== -->
+<div id="footer">
+<div class="connect">
+<div class="personal-connect">
+<h1>LET'S CONNECT</h1>
+<p>
+                    Follow my journey or get in touch!
+                </p>
+<div class="personal-socials">
+<!-- FACEBOOK -->
+<a class="social-link" href="https://www.facebook.com/share/1ER2cJLfgz/" rel="noopener noreferrer" target="_blank">
+<img alt="Facebook Logo" src="images/facebook.svg"/>
+<span>Facebook</span>
+</a>
+<!-- INSTAGRAM -->
+<a class="social-link" href="https://www.instagram.com/reshik_ydv?hvrq=ZGRvaW5tNHJkMTFk" rel="noopener noreferrer" target="_blank">
+<img alt="Instagram Logo" src="images/instagram.svg"/>
+<span>Instagram</span>
+</a>
+<!-- GMAIL -->
+<a class="social-link" href="mailto:reshikeshyadav55@gmail.com">
+<img alt="Gmail Logo" src="images/gmail.svg"/>
+<span>Gmail</span>
+</a>
+</div>
+</div>
+</div>
+<!-- ===== COPYRIGHT ===== -->
+<div class="footnote">
+<div>
+<p>
+                    © 2026 RESHIKESH YADAV |
+                    STUDENT ID: 26224576 |
+                    TOKYO INTERNATIONAL UNIVERSITY
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- ===== CONTACT FORM JAVASCRIPT ===== -->
+<script>
+    document.getElementById("contact-form")
+        .addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            let name = document.getElementById(
+                "visitor-name"
+            ).value.trim();
+
+            let email = document.getElementById(
+                "visitor-email"
+            ).value.trim();
+
+            let subject = document.getElementById(
+                "visitor-subject"
+            ).value.trim();
+
+            let message = document.getElementById(
+                "visitor-message"
+            ).value.trim();
+
+            let emailBody =
+                "Name: " + name + "\n" +
+                "Email: " + email + "\n\n" +
+                "Message:\n" + message;
+
+            let emailLink =
+                "mailto:reshikeshyadav55@gmail.com" +
+                "?subject=" + encodeURIComponent(subject) +
+                "&body=" + encodeURIComponent(emailBody);
+
+            window.location.href = emailLink;
+
+        });
+</script>
+</body>
+</html>
+
